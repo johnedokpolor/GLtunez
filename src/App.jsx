@@ -28,7 +28,7 @@ function App() {
      Swal.fire({
       title: 'Welcome to GLtunez🎵',
       text: 'Preview All Your Songs For Free🥳.',
-      timer: 5000,
+      timer: 2000,
       showConfirmButton: false
     })
 //     fetch('https://accounts.spotify.com/api/token', 
