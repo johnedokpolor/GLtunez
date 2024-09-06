@@ -40,13 +40,13 @@ export default [
         trackId: "5",
         previewUrl: Song5,
         artistName: "Rihanna",
-        artworkUrl100: SongImg2
+        artworkUrl100: SongImg1
     },
     {
         trackName: "Love The Way You Lie",
         trackId: "6",
         previewUrl: Song6,
         artistName: "Eminem ft Rihanna",
-        artworkUrl100: SongImg1
+        artworkUrl100: SongImg2
     },
 ]
