@@ -47,6 +47,8 @@ function MusicPlayer(props) {
                             song = {props.song}
                             setCurrentSong = {props.setCurrentSong}
                             setIsPlaying = {props.setIsPlaying}
+                            setIndex = {props.setIndex}
+
                         />
                 )})}
             </section>
