@@ -5,6 +5,7 @@ function Playlist(props) {
         var positionIndex = props.songs.findIndex(song => song.trackId == id)
         console.log(e.target)
         console.log(positionIndex)
+        props.setIndex(positionIndex)
         props.setCurrentSong(props.songs[positionIndex])
         props.setIsPlaying(true)
         setTimeout(() => {
