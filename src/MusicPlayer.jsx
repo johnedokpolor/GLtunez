@@ -69,6 +69,7 @@ function MusicPlayer(props) {
              <div onClick={props.playPause}><FontAwesomeIcon icon={props.isPlaying? faPause : faPlay} /></div>
              <div><FontAwesomeIcon icon={faForward} onClick={props.forwardSong} /></div> 
           </div>
+            <p className='dev'> Made With 💓 By GLtech</p>
         </div>
       </div>
     )
