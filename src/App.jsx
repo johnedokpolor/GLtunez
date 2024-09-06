@@ -25,6 +25,12 @@ function App() {
   //   const result = await 
   // }
   useEffect( () => {
+     Swal.fire({
+      title: 'Welcome to GLtunez🎵',
+      text: 'Preview All Your Songs For Free🥳.',
+      timer: 5000,
+      showConfirmButton: false
+    })
 //     fetch('https://accounts.spotify.com/api/token', 
 //       {
 //       method: 'POST',
