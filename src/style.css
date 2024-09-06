@@ -238,8 +238,11 @@ nav .circle {
 }
 @media (max-width:600px) {
   .playlists {
-    bottom:-40%;
+    bottom:-45%;
     transition: bottom 1s 0.2s;
   }
+  .show {
+  bottom: 0;
+}
 }
 
