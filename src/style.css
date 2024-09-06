@@ -216,7 +216,9 @@ nav .circle {
   background: rgb(23, 41, 23);
   color: #fff;
 }
-
+.dev {
+  margin-top: 10px;
+}
 @keyframes rotate {
   0% {
       transform: rotate(0deg);
@@ -244,6 +246,9 @@ nav .circle {
   }
   .show {
   bottom: 10px;
+}
+  .dev {
+  margin-top: 20px;
 }
 }
 
