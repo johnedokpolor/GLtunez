@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faAngleLeft, faBackward, faForward, faPlay, faPause, faSearch, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faAngleLeft, faBackward, faForward, faPlay, faPause, faSearch, faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import Playlist from './Playlist.jsx';
 
 
@@ -19,7 +19,7 @@ function MusicPlayer(props) {
     return(
         <div className="container">
         <div className="music-player">
-  
+        <h3>GLtunez</h3>
           <nav>
             <div className="circle">
               <FontAwesomeIcon icon={faAngleLeft} onClick={playDefault} />
@@ -32,12 +32,9 @@ function MusicPlayer(props) {
             }}/>
             <FontAwesomeIcon icon={faSearch} className='search-icon'  onClick={props.searchSong}/>
             </div>
-            <div className="circle">
-                <FontAwesomeIcon icon={faBars} onClick={() => setIsPlaylist(prev => !prev)} />
-            </div>
           </nav>
           <div className={isPlaylist? "playlists show" : "playlists"}>
-          <FontAwesomeIcon icon={faAngleDown} onClick={() => setIsPlaylist(prev => !prev)} className='hide' />
+          <FontAwesomeIcon icon={isPlaylist? faAngleDown : faAngleUp } onClick={() => setIsPlaylist(prev => !prev)} className='hide' />
             <section>
                 {props.songs.map(song => {
                 return (
