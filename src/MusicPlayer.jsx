@@ -32,8 +32,8 @@ function MusicPlayer(props) {
             <FontAwesomeIcon icon={faSearch} className='search-icon'  onClick={props.searchSong}/>
             </div>
           </nav>
-          <div className={isPlaylist? "playlists show" : "playlists"}>
-          <FontAwesomeIcon icon={isPlaylist? faAngleDown : faAngleUp } onClick={() => setIsPlaylist(prev => !prev)} className='hide' />
+          <div className={isPlaylist? "playlists show" : "playlists"} onClick={() => setIsPlaylist(prev => !prev)}>
+          <FontAwesomeIcon icon={isPlaylist? faAngleDown : faAngleUp } className='hide' />
             <section>
                 {props.songs.map(song => {
                 return (
