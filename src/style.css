@@ -106,6 +106,7 @@ nav .circle {
 }
 .playlists .hide{
   cursor: pointer;
+  width:100%;
   animation: translate 1s 0.2s linear infinite running;
 }
 .show {
