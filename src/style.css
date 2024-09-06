@@ -242,7 +242,7 @@ nav .circle {
     transition: bottom 1s 0.2s;
   }
   .show {
-  bottom: 0;
+  bottom: 10px;
 }
 }
 
