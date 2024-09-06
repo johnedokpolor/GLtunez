@@ -19,7 +19,6 @@ function MusicPlayer(props) {
     return(
         <div className="container">
         <div className="music-player">
-        <h3>GLtunez</h3>
           <nav>
             <div className="circle">
               <FontAwesomeIcon icon={faAngleLeft} onClick={playDefault} />
