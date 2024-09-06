@@ -65,7 +65,7 @@ nav .search input {
   border-radius: 0 10px 10px 0;
   padding: 10px;
   height: 30px;
-  background: var(--color);
+  background: rgb(23, 41, 23);
   color: white;
   cursor: pointer;
   font-size: 18px;
@@ -79,7 +79,7 @@ nav .circle {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  background: transparent;
+  background: rgb(23, 41, 23);
   color: #fff;
   box-shadow: 0px 5px 10px rgba(71, 90, 71, 0.527);
 }
@@ -212,7 +212,7 @@ nav .circle {
 }
 .controls div:nth-child(2) {
   transform: scale(1.5);
-  background: var(--color);
+  background: rgb(23, 41, 23);
   color: #fff;
 }
 
