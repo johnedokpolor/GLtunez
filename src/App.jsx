@@ -189,6 +189,7 @@ function App() {
       songs = {songs}
       setSongs = {setSongs}
       index = {index}
+      setIndex = {setIndex}
       songsData = {songsData}
       progress = {progress}
       setSearchInput = {setSearchInput}
