@@ -26,7 +26,7 @@ body {
 .music-player {
   width: 100%;
   height: 100%;
-  padding: 30px 20px;
+  padding: 7% 20px;
   text-align: center;
   background-color: var(--color);
   position: relative;
@@ -234,6 +234,11 @@ nav .circle {
   }
   100% {
       transform: translateY(0);
+  }
+}
+@media (max-width:600px) {
+  .playlists {
+    bottom:-60%
   }
 }
 
