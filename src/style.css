@@ -86,7 +86,7 @@ nav .circle {
 .playlists {
   position: absolute;
   overflow-x: hidden;
-  bottom: -60%;
+  bottom: -400px;
   right: 0;
   padding: 10px 0;
   width: 100%;
