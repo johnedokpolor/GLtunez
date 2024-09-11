@@ -240,6 +240,9 @@ nav .circle {
   }
 }
 @media (max-width:600px) {
+  * {
+    cursor:none
+  }
   .playlists {
     bottom:-46.5%;
     transition: bottom 1s 0.2s;
