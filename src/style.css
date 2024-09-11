@@ -79,8 +79,8 @@ nav .circle {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  background: rgb(23, 41, 23);
-  color: #fff;
+  background: white;
+  color: rgb(23, 41, 23);
   box-shadow: 0px 5px 10px rgba(71, 90, 71, 0.527);
 }
 .playlists {
@@ -201,20 +201,20 @@ nav .circle {
 .controls div {
   width: 60px;
   height: 60px;
-  background: #fff;
+  border: 1px solid white;
   margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: var(--color);
+  color: rgb(23, 41, 23);
   box-shadow: 0px 5px 10px rgba(71, 90, 71, 0.527);
   cursor: pointer;
 }
 .controls div:nth-child(2) {
   transform: scale(1.5);
-  background: rgb(23, 41, 23);
-  color: #fff;
+  background: white;
+  color: rgb(23, 41, 23);
 }
 .dev {
   margin-top: 10px;
