@@ -129,7 +129,14 @@ function App() {
 
   function forwardSong() {
     if(index+1 === songs.length) {
-      alert("No Next Song")
+      Swal.fire({
+        timer: 2000,
+        timerProgressBar: true,
+        showConfirmButton:false,
+        width:200,
+        position: "top-end",
+        text: '🎵No Next Song🎵'
+      })
   }
   else {
     setIndex(prev => prev + 1)
@@ -142,7 +149,14 @@ function App() {
   }
   function backwardSong() {
     if(index === 0) {
-      alert("No Previous Song")
+      Swal.fire({
+        timer: 2000,
+        timerProgressBar: true,
+        showConfirmButton:false,
+        width:200,
+        position: "top-start",
+        text: '🎵No Previous Song🎵'
+      })
   }
   else {
     setIndex(prev => prev - 1)
