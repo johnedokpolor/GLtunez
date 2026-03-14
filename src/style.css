@@ -87,7 +87,7 @@ nav .circle {
   position: absolute;
   overflow-x: hidden;
   bottom: -400px;
-  /* right: 0; */
+  right: 0;
   padding: 10px 0;
   width: 100%;
   color: white;
@@ -119,8 +119,8 @@ nav .circle {
   height: fit-content;
 }
 .playlist .div-img{
-  height: 60px;
-  width: 60px;
+  height: 120px;
+  width: 120px;
 }
 .playlist main {
   display: flex;
@@ -139,7 +139,8 @@ nav .circle {
 }
 .div-img img {
   border-radius:10%;
-  margin-right:30px
+  margin-right:30px;
+  width:100px
 }
 
 .img-div {
