@@ -171,7 +171,7 @@ function App() {
       //   text: '🎵No Previous Song🎵'
       // })
       setIndex(songs.length - 1)
-    setCurrentSong(songs[songs.length - 1)])
+    setCurrentSong(songs[songs.length - 1])
     setIsPlaying(true)
     setTimeout(() => {
       song.current.play()
