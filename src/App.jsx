@@ -120,8 +120,15 @@ function App() {
     song.current.currentTime = progress.current.value 
   }
   function nextSong() {
-    setIndex(prev => prev + 1)
+    if(songs.length !== index+1){
+          setIndex(prev => prev + 1)
     setCurrentSong(songs[index + 1])
+    }
+    else{
+      setIndex(0)
+    setCurrentSong(songs[0])
+    }
+
     setTimeout(() => {
       song.current.play()
     },500)
@@ -129,14 +136,20 @@ function App() {
 
   function forwardSong() {
     if(index+1 === songs.length) {
-      Swal.fire({
-        timer: 2000,
-        timerProgressBar: true,
-        showConfirmButton:false,
-        width:200,
-        position: "top-end",
-        text: '🎵No Next Song🎵'
-      })
+      // Swal.fire({
+      //   timer: 2000,
+      //   timerProgressBar: true,
+      //   showConfirmButton:false,
+      //   width:200,
+      //   position: "top-end",
+      //   text: '🎵No Next Song🎵'
+      // })
+      setIndex(0)
+    setCurrentSong(songs[0])
+    setIsPlaying(true)
+    setTimeout(() => {
+      song.current.play()
+    },500)
   }
   else {
     setIndex(prev => prev + 1)
@@ -149,14 +162,20 @@ function App() {
   }
   function backwardSong() {
     if(index === 0) {
-      Swal.fire({
-        timer: 2000,
-        timerProgressBar: true,
-        showConfirmButton:false,
-        width:200,
-        position: "top-start",
-        text: '🎵No Previous Song🎵'
-      })
+      // Swal.fire({
+      //   timer: 2000,
+      //   timerProgressBar: true,
+      //   showConfirmButton:false,
+      //   width:200,
+      //   position: "top-start",
+      //   text: '🎵No Previous Song🎵'
+      // })
+      setIndex(songs.length - 1)
+    setCurrentSong(songs[songs.length - 1)])
+    setIsPlaying(true)
+    setTimeout(() => {
+      song.current.play()
+    },500)
   }
   else {
     setIndex(prev => prev - 1)
