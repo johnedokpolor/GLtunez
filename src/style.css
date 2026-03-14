@@ -137,12 +137,7 @@ nav .circle {
 .hide:hover, .playlist h4:hover, .playlist p:hover {
   color: rgb(83, 145, 83) !important;
 }
-.div-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10%;
-  object-fit: cover;
-}
+
 .img-div {
   width: 250px;
   margin: auto;
