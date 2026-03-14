@@ -119,8 +119,8 @@ nav .circle {
   height: fit-content;
 }
 .playlist .div-img{
-  height: 120px;
-  width: 120px;
+  height: 60px;
+  width: 100px;
 }
 .playlist main {
   display: flex;
